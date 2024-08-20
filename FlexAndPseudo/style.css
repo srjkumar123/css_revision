@@ -1,0 +1,69 @@
+.main{
+    width: 500px;
+    height: 500px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(108, 17, 150);
+}
+.box3{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(23, 126, 139);
+}
+
+h1{
+    position: relative;
+    width: fit-content;
+}
+h1::before{
+    content: '';
+    width: 100%;
+    background-color: aqua;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+h2::first-line{
+    color: red;
+}
+
+h2::first-letter{
+    font-size: 5vw;
+}
+
+h2::selection{
+    color: green;
+}
+
+h2:hover{
+    color: grey;
+}
+
+button:active{
+    background-color: grey;
+}
+
+input:focus{
+    background-color: yellow;
+    color: red;
+}
+
+.main div:nth-child(2n){
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+}
